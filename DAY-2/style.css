@@ -1,0 +1,160 @@
+:root {
+  --maincolor: rgb(39, 68, 114);
+  --secondarycolor: rgb(16, 41, 65);
+  --lightglass: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
+}
+
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+header {
+  display: flex;
+  background-color: var(--maincolor);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid rgb(66, 110, 127);
+}
+@media (min-width: 300px) and (max-width: 769px) {
+  header {
+    justify-content: space-around;
+  }
+}
+header .leftheader svg {
+  width: 40px;
+  fill: var(--secondarycolor);
+  fill: rgb(46, 170, 219);
+  padding: 0px 80px;
+}
+header .leftheader svg:hover {
+  fill: rgb(143, 166, 169);
+}
+@media (min-width: 300px) and (max-width: 769px) {
+  header .leftheader svg {
+    padding: 0px 10px;
+  }
+}
+header .rightheader {
+  padding: 0px 80px;
+}
+@media (min-width: 300px) and (max-width: 769px) {
+  header .rightheader {
+    padding: 0px 10px;
+  }
+}
+header .rightheader button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 7px;
+  border: 1px solid var(--maincolor);
+  color: var(--maincolor);
+  background: linear-gradient(to right bottom, rgb(48, 116, 180), rgb(178, 183, 191));
+}
+header .rightheader button:hover {
+  background: var(--secondarycolor);
+  color: white;
+}
+
+.maincontainer {
+  background: radial-gradient(rgb(46, 170, 219), var(--maincolor));
+  display: flex;
+  justify-content: center;
+  padding: 102px 0px;
+}
+.maincontainer .submaincontainer {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background: var(--lightglass);
+  border-radius: 10px;
+}
+@media (min-width: 300px) and (max-width: 769px) {
+  .maincontainer .submaincontainer {
+    flex-direction: column;
+  }
+}
+.maincontainer .submaincontainer:hover .leftcontainer {
+  opacity: 1;
+}
+.maincontainer .submaincontainer:hover .rightcontainer {
+  opacity: 1;
+}
+.maincontainer .leftcontainer {
+  width: 400px;
+  background: linear-gradient(to right bottom, rgb(29, 95, 156), rgb(168, 201, 207));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px;
+  height: 400px;
+  border-radius: 10px 0px;
+}
+@media (min-width: 300px) and (max-width: 769px) {
+  .maincontainer .leftcontainer {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+}
+.maincontainer .leftcontainer form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.maincontainer .leftcontainer form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  border: 1px solid skyblue;
+  font-size: 17px;
+  font-weight: 100;
+  background: linear-gradient(to right bottom, rgb(124, 184, 239), rgb(245, 251, 252));
+  color: var(--maincolor);
+  caret-color: var(--maincolor);
+}
+.maincontainer .leftcontainer form input::-moz-placeholder {
+  color: var(--maincolor);
+}
+.maincontainer .leftcontainer form input::placeholder {
+  color: var(--maincolor);
+}
+.maincontainer .leftcontainer form .decidercontainer {
+  text-align: center;
+}
+.maincontainer .leftcontainer form .decider {
+  color: var(--maincolor);
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.maincontainer .leftcontainer form .decider:hover {
+  background: var(--maincolor) !important;
+  color: white;
+}
+.maincontainer .rightcontainer {
+  max-width: 500px;
+  height: 400px;
+  margin-right: 10px;
+  opacity: 0.8;
+}
+@media (min-width: 300px) and (max-width: 769px) {
+  .maincontainer .rightcontainer {
+    margin: 0px;
+    width: 100%;
+  }
+}
+.maincontainer .rightcontainer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.maincontainer .rightcontainer img:hover {
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */
